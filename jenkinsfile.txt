@@ -19,7 +19,7 @@ stage('Clone repo') {
 
 
 
-               git url: 'https://github.com/jayamehta29/JenkinsDocker.git', branch: 'master'
+               git url: 'https://github.com/aryangupta198/JenkinsDocker.git', branch: 'main'
 
 
 
@@ -45,7 +45,7 @@ stage('Clone repo') {
 
 
 
-                   builtDockerImage = docker.build "jayamehta2944/dockerjenkins:v1.0"
+                   builtDockerImage = docker.build "aryan198g/hello-world:v1.0"
 
 
 
@@ -77,7 +77,7 @@ stage('Clone repo') {
 
 
 
-                       docker.withRegistry('', 'docker-cred') {
+                       docker.withRegistry('', 'docker-cred-aryan') {
 
 
 
