@@ -45,7 +45,7 @@ stage('Clone repo') {
 
 
 
-                   builtDockerImage = docker.build "aryan198g/jenkins-docker:v1.0"
+                   builtDockerImage = docker.build "aryang19/jenkins-docker:v1.0"
 
 
 
